@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Tips: </title>
+</head>
+<body>
+    <h2> Tips: </h2>
+    {# 使用 length 过滤器获取 movies 变量的长度 #}
+    <ul>
+        {% for tip in tips %}  {# 迭代 movies 变量 #}
+        <li>{{ tip }} : {{ tips[tip] }}</li>  {# 等同于 movie['title'] #}
+        {% endfor %}  {# 使用 endfor 标签结束 for 语句 #}
+    </ul>
+    <footer>
+        <small>&copy; 2018 proxypool</small>
+	</footer>
+</body>
+</html>
